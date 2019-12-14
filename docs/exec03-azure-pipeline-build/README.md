@@ -66,4 +66,24 @@ Azure DevOps根据你的代码结构自动创建了流水线配置文件 azure-p
 
 ![](images/2019-12-14_11-59-35.png)
 
+## 任务 4 - 更新流水线配置，添加自动化测试
+
+在GitHub中到 _demo-assets/azure-pipeline.yml 文件，并将此文件内容替换到以上步骤中Azure Pipeline自动创建的文件内容上。
+
+![](images/2019-12-14_12-28-30.png)
+
+此操作将再次触发Azure Pipeline持续集成的运行，回到Azure Pipeline中，你将看到如下构建正在运行的状态。
+
+![](images/2019-12-14_12-32-59.png)
+
+在新版的azure-pipeline.yml文件中，我们主要添加了自动化测试和制品打包的动作。等待以上构建完成，查看运行结果如下。
+
+点击 **Summary** 页面并展开测试部门的日志，你将看到嵌入在Azure Pipeline流水线中的自动化测试结果。
+
+![](images/2019-12-14_12-35-37.png)
+
+点击右上角 **Artifact** 按钮你将看到已经打成zip包的发布制品。
+
+![](images/2019-12-14_12-37-08.png)
+
 至此，我们就完成了Azure Pipeline自动化构建持续集成CI的搭建和运行。
