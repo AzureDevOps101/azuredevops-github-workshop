@@ -43,7 +43,7 @@
 练习列表
 
 - [练习 1 - 准备环境](docs/exec01-env-prep/README.md)
-- 练习 2 - 本地调试代码（可选）
+- [练习 2 - 本地调试代码（可选）](docs/exec02-local-debugging/README.md)
 - 练习 3 - 搭建Azure Pipeline流水线持续集成部分并触发CI
 - 练习 4 - 搭建Azure Pipeline流水线持续部署部分并触发CD
 - 练习 5 - 在流水线中添加Azure Kubernetes Services集群环境，完成k8s部署
