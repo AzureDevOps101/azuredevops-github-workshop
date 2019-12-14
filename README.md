@@ -16,3 +16,36 @@
 - 在生产环境中发现问题，并启用Azure Board电子看板功能，创建bug并开始过程追踪
 - 添加单元测试，定位Bug，并通过GitHub Pull Request完成代码评审和测试版本部署
 - 通过Azure Pipeline完成新版本上线部署
+
+## 操作手册
+
+我们将按照以下练习推进，每个练习都将由讲师先进行操作，然后给与学员15-20分钟的时候实际操作；如果现场无法完成也没有关系，大家可以回去以后自己多操作熟悉几次。本文档会一致在线免费提供给大家。
+
+前提条件
+
+请确保你已经准备了如下环境
+
+- 可用的Github个人账号 <https://www.github.com>
+- 可用的Azure DevOps个人账号 <https://dev.azure.com>
+- 可用的Azure云控制台账号（需要与以上Azure DevOps使用同一个微软账号）<https://azure.com/free>
+- Windows 10/MacOS操作系统环境，推荐更新到最新版本
+- 命令行工具
+  - cmder for Windows <https://cmder.net/>
+  - iTerm2 for MacOS <https://iterm2.com/>
+  - Azure CLI <https://docs.azure.cn/zh-cn/cli/>
+  - kubectl <https://kubernetes.io/docs/tasks/tools/install-kubectl/>
+- 本地调试环境（可选）- 以下实验可以无需进行本地就可以进行，以下环境为可选安装
+  - Visual Studio Code <https://code.visualstudio.com/>
+  - Git <https://git-scm.com/>
+  - Node.js <https://nodejs.org/> 请使用LTS版本
+
+
+练习列表
+
+- [练习 1 - 准备环境](docs/exec01-env-prep/README.md)
+- 练习 2 - 本地调试代码（可选）
+- 练习 3 - 搭建Azure Pipeline流水线持续集成部分并触发CI
+- 练习 4 - 搭建Azure Pipeline流水线持续部署部分并触发CD
+- 练习 5 - 在流水线中添加Azure Kubernetes Services集群环境，完成k8s部署
+- 练习 6 - 在生产环境中发现问题，并使用Azure Board电子看板跟踪bug
+- 练习 7 - 采用TDD方式完成Bug修复
